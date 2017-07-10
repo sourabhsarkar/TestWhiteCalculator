@@ -11,7 +11,7 @@ namespace TestWhiteCalculator
     class Program
     {
 
-        private static string ExeSourceFile = Environment.CurrentDirectory + "\\calc.exe";
+        private static string ExeSourceFile = (Environment.CurrentDirectory).Replace("bin\\Debug","") + "calc.exe";
         private static Application _application;
         private static Window _mainWindow;
 
